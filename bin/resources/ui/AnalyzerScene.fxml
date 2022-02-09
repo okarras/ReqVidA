@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import application.view.CustomSlider?>  
+<?import application.view.Timeline?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="splitPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="720.0" minWidth="1280.0" orientation="VERTICAL" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.AnalyzerController">
+	<items>
+		<GridPane maxHeight="707.0" minWidth="1280.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="300.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="650.0" prefWidth="650.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints maxHeight="707.0" minHeight="580.0" prefHeight="707.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="640.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+					<bottom>
+						<VBox minHeight="-Infinity" prefHeight="100.0">
+							<children>
+								<HBox alignment="CENTER" minHeight="-Infinity" prefHeight="30.0">
+									<children>
+										<Label fx:id="playTime" text="00:00:00" HBox.hgrow="ALWAYS">
+											<padding>
+												<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+											</padding>
+										</Label>
+										<CustomSlider fx:id="timeSlider" blockIncrement="1.0" minorTickCount="0" onMouseClicked="#clickOnTimeSlider" showTickMarks="true" HBox.hgrow="ALWAYS">
+											<HBox.margin>
+												<Insets top="10.0" />
+											</HBox.margin>
+										</CustomSlider>
+									</children>
+								</HBox>
+								<HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" BorderPane.alignment="CENTER">
+									<children>
+										<Button fx:id="playButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#togglePlayButton" prefHeight="30.0" prefWidth="30.0" text="&gt;" textAlignment="CENTER">
+											<HBox.margin>
+												<Insets left="25.0" />
+											</HBox.margin>
+										</Button>
+										<Separator orientation="VERTICAL" prefWidth="25.0" />
+										<ToggleButton fx:id="checkRepeat" mnemonicParsing="false" onAction="#toggleRepeat" text="Repeat" HBox.hgrow="ALWAYS" />
+										<Separator orientation="VERTICAL" prefHeight="90.0" prefWidth="25.0" />
+										<Label text="Volume:" HBox.hgrow="ALWAYS">
+											<padding>
+												<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+											</padding>
+										</Label>
+										<CustomSlider fx:id="volumeSlider" blockIncrement="1.0" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#clickOnVolumeSlider" prefWidth="100.0" HBox.hgrow="ALWAYS">
+											<HBox.margin>
+												<Insets right="25.0" />
+											</HBox.margin>
+										</CustomSlider>
+										<Label fx:id="volume" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="45.0" text="0 %">
+											<padding>
+												<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+											</padding>
+										</Label>
+										<Separator orientation="VERTICAL" prefHeight="90.0" prefWidth="25.0" />
+										<Button mnemonicParsing="false" onAction="#saveAsPng" text="Snapshot" HBox.hgrow="ALWAYS" />
+									</children>
+									<padding>
+										<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+									</padding>
+									<BorderPane.margin>
+										<Insets />
+									</BorderPane.margin>
+								</HBox>
+							</children>
+						</VBox>
+					</bottom>
+					<center>
+						<MediaView fx:id="mediaView" fitHeight="480.0" fitWidth="640.0" BorderPane.alignment="CENTER">
+							<BorderPane.margin>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+							</BorderPane.margin>
+						</MediaView>
+					</center>
+				</BorderPane>
+				<SplitPane dividerPositions="0.1" minWidth="-Infinity" prefWidth="630.0" GridPane.columnSpan="2">
+					<items>
+						<Accordion fx:id="accordion" maxHeight="1.7976931348623157E308" maxWidth="215.0" minWidth="-Infinity" prefWidth="215.0">
+							<panes>
+								<TitledPane fx:id="stakeholderPane" animated="false" minHeight="-Infinity" prefHeight="25.0" text="Stakeholder">
+									<content>
+										<AnchorPane maxWidth="300.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="180.0">
+											<children>
+												<GridPane alignment="CENTER_LEFT" maxWidth="300.0" minHeight="-Infinity" minWidth="180.0" prefHeight="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+													<children>
+														<ListView fx:id="stakeholderListView" maxHeight="1.7976931348623157E308" maxWidth="300.0" GridPane.rowIndex="1" />
+														<VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+															<children>
+																<HBox alignment="CENTER_LEFT" spacing="5.0">
+																	<children>
+																		<VBox alignment="CENTER_LEFT" spacing="13.0">
+																			<children>
+																				<Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Name:" />
+																				<Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Function:" />
+																				<Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Contact:" />
+																				<Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Airtime:" />
+																			</children>
+																		</VBox>
+																		<VBox spacing="5.0">
+																			<children>
+																				<TextField fx:id="nameField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="121.0">
+																					<VBox.margin>
+																						<Insets />
+																					</VBox.margin>
+																				</TextField>
+																				<TextField fx:id="functionField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="121.0" />
+																				<TextField fx:id="contactField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="121.0" />
+																				<TextField fx:id="airtimeField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="121.0" />
+																			</children>
+																		</VBox>
+																	</children>
+																	<padding>
+																		<Insets bottom="2.0" top="2.0" />
+																	</padding>
+																	<VBox.margin>
+																		<Insets left="5.0" />
+																	</VBox.margin>
+																</HBox>
+																<HBox alignment="CENTER">
+																	<children>
+																		<Button fx:id="addStakeholderButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addStakeholderData" prefWidth="85.0" text="Add">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																		<Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clearStakeholderData" prefWidth="85.0" text="Clear">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																	</children>
+																	<VBox.margin>
+																		<Insets />
+																	</VBox.margin>
+																</HBox>
+															</children>
+															<padding>
+																<Insets left="2.0" top="2.0" />
+															</padding>
+														</VBox>
+													</children>
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="150.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+												</GridPane>
+											</children>
+										</AnchorPane>
+									</content>
+								</TitledPane>
+								<TitledPane fx:id="annotationPane" animated="false" minHeight="-Infinity" prefHeight="25.0" text="Annotation">
+									<content>
+										<AnchorPane layoutX="8.800000190734863" layoutY="8.800000190734863" minHeight="-Infinity" minWidth="180.0" prefHeight="150.0" prefWidth="180.0">
+											<children>
+												<GridPane alignment="CENTER_LEFT" maxWidth="300.0" minWidth="180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+													<children>
+														<ListView fx:id="annotationListView" maxHeight="1.7976931348623157E308" maxWidth="300.0" GridPane.rowIndex="1" />
+														<VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+															<children>
+																<HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+																	<children>
+																		<Label alignment="CENTER" contentDisplay="CENTER" text="Annotation" textAlignment="CENTER" />
+																	</children>
+																</HBox>
+																<HBox alignment="CENTER">
+																	<children>
+																		<Button fx:id="importantButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addImportantAnnotation" prefWidth="85.0" text="Important">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																		<Button fx:id="conflictButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addConflictAnnotation" prefWidth="85.0" text="Conflict">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																	</children>
+																	<VBox.margin>
+																		<Insets />
+																	</VBox.margin>
+																</HBox>
+																<HBox alignment="CENTER">
+																	<children>
+																		<Button fx:id="requirementButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addRequirementAnnotation" prefWidth="85.0" text="Requirement">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																		<Button fx:id="questionButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addQuestionAnnotation" prefWidth="85.0" text="Question">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																	</children>
+																	<VBox.margin>
+																		<Insets />
+																	</VBox.margin>
+																</HBox>
+															</children>
+															<padding>
+																<Insets bottom="5.0" top="2.0" />
+															</padding>
+														</VBox>
+													</children>
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="85.0" valignment="CENTER" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+												</GridPane>
+											</children>
+										</AnchorPane>
+									</content>
+								</TitledPane>
+								<TitledPane animated="false" prefHeight="200.0" prefWidth="200.0" text="Glossary">
+									<content>
+										<AnchorPane maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="180.0">
+											<children>
+												<GridPane alignment="CENTER_LEFT" maxWidth="300.0" minHeight="-Infinity" minWidth="180.0" prefHeight="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+													<children>
+														<ListView fx:id="glossaryListView" maxHeight="1.7976931348623157E308" maxWidth="300.0" GridPane.rowIndex="1" />
+														<VBox minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+															<children>
+																<HBox alignment="CENTER_LEFT">
+																	<children>
+																		<Label alignment="CENTER" text="Glossary" textAlignment="CENTER">
+																			<padding>
+																				<Insets bottom="2.0" left="72.0" top="2.0" />
+																			</padding>
+																		</Label>
+																	</children>
+																</HBox>
+																<HBox alignment="CENTER_LEFT" spacing="5.0">
+																	<children>
+																		<VBox alignment="CENTER_LEFT" spacing="10.0">
+																			<children>
+																				<Label maxHeight="-Infinity" maxWidth="-Infinity" text="Term:" />
+																				<Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Decription:" />
+																			</children>
+																		</VBox>
+																		<VBox spacing="5.0">
+																			<children>
+																				<TextField fx:id="termField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="115.0">
+																					<VBox.margin>
+																						<Insets />
+																					</VBox.margin>
+																				</TextField>
+																				<TextField fx:id="descriptionField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="115.0" />
+																			</children>
+																		</VBox>
+																	</children>
+																	<padding>
+																		<Insets bottom="2.0" top="2.0" />
+																	</padding>
+																	<VBox.margin>
+																		<Insets left="5.0" />
+																	</VBox.margin>
+																</HBox>
+																<HBox alignment="CENTER">
+																	<children>
+																		<Button fx:id="addGlossaryButton" alignment="CENTER" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addGlossaryData" prefWidth="85.0" text="Add">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																		<Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clearGlossaryData" prefWidth="85.0" text="Clear">
+																			<HBox.margin>
+																				<Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+																			</HBox.margin>
+																		</Button>
+																	</children>
+																	<VBox.margin>
+																		<Insets />
+																	</VBox.margin>
+																</HBox>
+															</children>
+															<padding>
+																<Insets left="2.0" top="2.0" />
+															</padding>
+														</VBox>
+													</children>
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="110.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+												</GridPane>
+											</children>
+										</AnchorPane>
+									</content>
+								</TitledPane>
+							</panes>
+						</Accordion>
+						<SplitPane dividerPositions="0.1" maxWidth="1.7976931348623157E308" prefWidth="200.0">
+							<items>
+								<AnchorPane minWidth="-Infinity" prefWidth="200.0">
+									<children>
+										<VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+											<children>
+												<HBox alignment="BOTTOM_LEFT">
+													<children>
+														<Label alignment="CENTER" contentDisplay="CENTER" text="Protocol" textAlignment="CENTER">
+															<font>
+																<Font name="System Bold" size="14.0" />
+															</font>
+															<padding>
+																<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS">
+															<children>
+																<Button fx:id="export" mnemonicParsing="false" onAction="#exportData" prefWidth="50.0" text="Export" />
+																<Button fx:id="save" mnemonicParsing="false" onAction="#saveProtocoll" prefWidth="75.0" text="Save">
+																	<HBox.margin>
+																		<Insets right="5.0" />
+																	</HBox.margin>
+																</Button>
+															</children>
+														</HBox>
+													</children>
+												</HBox>
+												<HTMLEditor fx:id="editor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" />
+											</children>
+										</VBox>
+									</children>
+								</AnchorPane>
+								<TabPane fx:id="tabPane" maxHeight="710.0" maxWidth="500.0" minHeight="-Infinity" minWidth="110.0" prefHeight="355.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" SplitPane.resizableWithParent="false" />
+							</items>
+						</SplitPane>
+					</items>
+				</SplitPane>
+			</children>
+		</GridPane>
+		<Timeline fx:id="timeline" maxHeight="1.7976931348623157E308"
+			maxWidth="1.7976931348623157E308" prefHeight="126.0" minHeight="180">
+		</Timeline>
+	</items>
+</SplitPane>

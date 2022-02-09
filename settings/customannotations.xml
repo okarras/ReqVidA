@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<customannotations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="customannotations.xsd">
+
+	<customannotation id="Scenario">
+		<attributes>
+			<attribute1>Description:</attribute1>
+			<attribute2></attribute2>
+			<attribute3></attribute3>
+			<attribute4></attribute4>
+			<attribute5></attribute5>
+		</attributes>
+	</customannotation>
+
+	<customannotation id="Storycard">
+		<attributes>
+			<attribute1>Title:</attribute1>
+			<attribute2>User Story:</attribute2>
+			<attribute3>Priority:</attribute3>
+			<attribute4>Cost:</attribute4>
+			<attribute5>Test:</attribute5>
+		</attributes>
+	</customannotation>
+
+</customannotations>

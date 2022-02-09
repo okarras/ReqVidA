@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shortcuts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="shortcuts.xsd">
+	<!-- ImportantAnnotation -->
+	<shortcut id="F1">
+		<importantannotation id="IMPORTANT">
+			<name></name>
+			<comment></comment>
+		</importantannotation>
+	</shortcut>
+
+	<!-- RequirementAnnotation -->
+	<shortcut id="F2">
+		<requirementannotation id="REQUIREMENT">
+			<name></name>
+			<comment></comment>
+			<granularity>FEATURE</granularity>
+			<displayformat>TEXT</displayformat>
+			<requirement></requirement>
+			<source></source>
+			<rationale></rationale>
+			<obligation>SHALL</obligation>
+			<priority>PRIORITY1</priority>
+		</requirementannotation>
+	</shortcut>
+
+	<!-- RAW RequirementAnnotation -->
+	<shortcut id="F3">
+		<requirementannotation id="REQUIREMENT">
+			<name></name>
+			<comment></comment>
+			<granularity>RAW_REQUIREMENT</granularity>
+			<displayformat>TEXT</displayformat>
+			<requirement></requirement>
+			<source></source>
+			<rationale></rationale>
+			<obligation>SHALL</obligation>
+			<priority>PRIORITY1</priority>
+		</requirementannotation>
+	</shortcut>
+
+	<!-- FUNCTIONAL RequirementAnnotation -->
+	<shortcut id="F4">
+		<requirementannotation id="REQUIREMENT">
+			<name></name>
+			<comment></comment>
+			<granularity>FUNCTIONAL_REQUIREMENT</granularity>
+			<displayformat>TEXT</displayformat>
+			<requirement></requirement>
+			<source></source>
+			<rationale></rationale>
+			<obligation>SHALL</obligation>
+			<priority>PRIORITY1</priority>
+		</requirementannotation>
+	</shortcut>
+
+	<!-- NONFUNCTIONAL RequirementAnnotation -->
+	<shortcut id="F5">
+		<requirementannotation id="REQUIREMENT">
+			<name></name>
+			<comment></comment>
+			<granularity>NONFUNCTIONAL_REQUIREMENT</granularity>
+			<displayformat>TEXT</displayformat>
+			<requirement></requirement>
+			<source></source>
+			<rationale></rationale>
+			<obligation>SHALL</obligation>
+			<priority>PRIORITY1</priority>
+		</requirementannotation>
+	</shortcut>
+
+	<!-- USE_CASE RAW RequirementAnnotation -->
+	<shortcut id="F6">
+		<requirementannotation id="REQUIREMENT">
+			<name></name>
+			<comment></comment>
+			<granularity>RAW_REQUIREMENT</granularity>
+			<displayformat>USE_CASE</displayformat>
+			<requirement></requirement>
+			<source></source>
+			<rationale></rationale>
+			<obligation>SHALL</obligation>
+			<priority>PRIORITY1</priority>
+		</requirementannotation>
+	</shortcut>
+
+	<!-- QuestionAnnotation -->
+	<shortcut id="F7">
+		<questionannotation id="QUESTION">
+			<name></name>
+			<comment></comment>
+		</questionannotation>
+	</shortcut>
+
+	<!-- ConflictAnnotation -->
+	<shortcut id="F8">
+		<conflictannotation id="CONFLICT">
+			<name></name>
+			<comment></comment>
+			<conflict></conflict>
+		</conflictannotation>
+	</shortcut>
+
+	<!-- CustomAnnotation -->
+	<shortcut id="F9">
+		<customannotation id="CUSTOM">
+			<customannotationid>Scenario</customannotationid>
+			<name></name>
+			<comment></comment>
+			<attribute1Value></attribute1Value>
+			<attribute2Value></attribute2Value>
+			<attribute3Value></attribute3Value>
+			<attribute4Value></attribute4Value>
+			<attribute5Value></attribute5Value>
+		</customannotation>
+	</shortcut>
+
+	<!-- CustomAnnotation -->
+	<shortcut id="F10">
+		<customannotation id="CUSTOM">
+			<customannotationid>Storycard</customannotationid>
+			<name></name>
+			<comment></comment>
+			<attribute1Value></attribute1Value>
+			<attribute2Value></attribute2Value>
+			<attribute3Value></attribute3Value>
+			<attribute4Value></attribute4Value>
+			<attribute5Value></attribute5Value>
+		</customannotation>
+	</shortcut>
+
+</shortcuts>

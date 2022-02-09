@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308"
+	maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308"
+			prefViewportHeight="700.0" prefViewportWidth="502.0"
+			AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<content>
+				<GridPane hgap="5.0" vgap="5.0" AnchorPane.bottomAnchor="0.0"
+					AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+					AnchorPane.topAnchor="0.0">
+					<children>
+						<Label text="ID:" GridPane.rowIndex="1" />
+						<Label text="Name:" GridPane.rowIndex="2" />
+						<Label text="Video:" GridPane.rowIndex="3" />
+						<Label text="Moment:" GridPane.rowIndex="4" />
+						<Label text="Type:" GridPane.rowIndex="5" />
+						<Label text="Comment:" GridPane.rowIndex="6"
+							GridPane.valignment="TOP">
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+							<padding>
+								<Insets top="5.0" />
+							</padding>
+						</Label>
+						<Label fx:id="id" maxWidth="1.7976931348623157E308" text="ID aus der Datenbank"
+							GridPane.columnIndex="1" GridPane.halignment="LEFT"
+							GridPane.rowIndex="1" GridPane.valignment="CENTER">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<GridPane.margin>
+								<Insets right="5.0" />
+							</GridPane.margin>
+						</Label>
+						<TextField fx:id="name" promptText="annotation name"
+							GridPane.columnIndex="1" GridPane.halignment="LEFT"
+							GridPane.rowIndex="2" GridPane.valignment="CENTER">
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</TextField>
+						<Label fx:id="videoName" maxWidth="1.7976931348623157E308"
+							text="Video-Name" GridPane.columnIndex="1" GridPane.halignment="LEFT"
+							GridPane.rowIndex="3" GridPane.valignment="CENTER">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</Label>
+						<Label fx:id="momentLabel" maxWidth="1.7976931348623157E308"
+							text="Zeitpunkt im Video" GridPane.columnIndex="1"
+							GridPane.halignment="LEFT" GridPane.rowIndex="4"
+							GridPane.valignment="CENTER">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</Label>
+						<HBox alignment="CENTER_RIGHT" spacing="10.0"
+							GridPane.columnIndex="1" GridPane.halignment="CENTER"
+							GridPane.rowSpan="2" GridPane.valignment="CENTER">
+							<children>
+								<Button fx:id="restoreButton" alignment="CENTER"
+									mnemonicParsing="false" onAction="#restoreAnnotation"
+									prefWidth="84.0" text="Restore" />
+								<Button fx:id="saveButton" alignment="CENTER"
+									mnemonicParsing="false" onAction="#saveAnnotation" prefWidth="84.0"
+									text="Save" />
+								<Button fx:id="deleteButton" alignment="CENTER"
+									mnemonicParsing="false" onAction="#deleteAnnotation" prefWidth="84.0"
+									text="Delete" />
+							</children>
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</HBox>
+						<TextArea fx:id="comment" maxHeight="1.7976931348623157E308"
+							promptText="comment" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+						<Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+							GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="7">
+							<panes>
+								<TitledPane animated="false" text="more">
+									<content>
+										<GridPane hgap="5.0" vgap="2.0">
+											<children>
+												<Label text="Granularity:" />
+												<ChoiceBox fx:id="granularity" minWidth="-Infinity"
+													prefWidth="200.0" GridPane.columnIndex="1">
+													<GridPane.margin>
+														<Insets />
+													</GridPane.margin>
+												</ChoiceBox>
+												<Label text="Source:" GridPane.rowIndex="1" />
+												<TextField fx:id="source" promptText="source"
+													GridPane.columnIndex="1" GridPane.rowIndex="1">
+													<GridPane.margin>
+														<Insets />
+													</GridPane.margin>
+												</TextField>
+												<Label text="Rationale:" GridPane.rowIndex="2" />
+												<TextField fx:id="rationale" promptText="rationale"
+													GridPane.columnIndex="1" GridPane.rowIndex="2">
+													<GridPane.margin>
+														<Insets />
+													</GridPane.margin>
+												</TextField>
+												<Label text="Obligation:" GridPane.rowIndex="3" />
+												<ChoiceBox fx:id="obligation" minWidth="-Infinity"
+													prefWidth="200.0" GridPane.columnIndex="1"
+													GridPane.rowIndex="3">
+													<GridPane.margin>
+														<Insets />
+													</GridPane.margin>
+												</ChoiceBox>
+												<Label text="Priority:" GridPane.rowIndex="4" />
+												<ChoiceBox fx:id="priority" minWidth="-Infinity"
+													prefWidth="200.0" GridPane.columnIndex="1"
+													GridPane.rowIndex="4">
+													<GridPane.margin>
+														<Insets />
+													</GridPane.margin>
+												</ChoiceBox>
+												<HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0"
+													GridPane.columnIndex="1" GridPane.rowIndex="5">
+													<children>
+														<VBox alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308"
+															spacing="5.0" HBox.hgrow="ALWAYS">
+															<children>
+																<ChoiceBox fx:id="displayFormat" minWidth="-Infinity"
+																	prefWidth="200.0" />
+																<TextField fx:id="requirement" maxWidth="1.7976931348623157E308"
+																	promptText="requirement" />
+															</children>
+														</VBox>
+													</children>
+												</HBox>
+												<Label text="Artefacts:" GridPane.rowIndex="6"
+													GridPane.valignment="TOP">
+													<padding>
+														<Insets top="10.0" />
+													</padding>
+												</Label>
+												<VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308"
+													spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+													<children>
+														<HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308"
+															maxWidth="1.7976931348623157E308" spacing="5.0"
+															VBox.vgrow="ALWAYS">
+															<children>
+																<Button fx:id="addArtefactButton" alignment="CENTER"
+																	disable="true" mnemonicParsing="false" onAction="#addArtefact"
+																	prefWidth="84.0" text="Add" />
+																<TextField fx:id="artefact" maxWidth="1.7976931348623157E308"
+																	promptText="artefact name" HBox.hgrow="ALWAYS" />
+															</children>
+														</HBox>
+														<ListView fx:id="artefactListView" maxHeight="1.7976931348623157E308"
+															maxWidth="1.7976931348623157E308" />
+													</children>
+													<padding>
+														<Insets top="5.0" />
+													</padding>
+												</VBox>
+												<HBox GridPane.rowIndex="5">
+													<children>
+														<VBox spacing="6.0">
+															<children>
+																<Label text="Format:">
+																	<padding>
+																		<Insets top="5.0" />
+																	</padding>
+																</Label>
+																<Label text="Requirement:" GridPane.rowIndex="12"
+																	GridPane.valignment="TOP">
+																	<padding>
+																		<Insets top="5.0" />
+																	</padding>
+																</Label>
+															</children>
+														</VBox>
+													</children>
+												</HBox>
+											</children>
+											<columnConstraints>
+												<ColumnConstraints hgrow="SOMETIMES"
+													maxWidth="-Infinity" minWidth="-Infinity" prefWidth="70.0" />
+												<ColumnConstraints hgrow="SOMETIMES"
+													maxWidth="1.7976931348623157E308" />
+											</columnConstraints>
+											<rowConstraints>
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+												<RowConstraints maxHeight="-Infinity"
+													minHeight="-Infinity" prefHeight="110.0" vgrow="SOMETIMES" />
+											</rowConstraints>
+										</GridPane>
+									</content>
+								</TitledPane>
+							</panes>
+						</Accordion>
+						<HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0"
+							GridPane.columnIndex="1" GridPane.rowIndex="5">
+							<children>
+								<ChoiceBox fx:id="type" minWidth="-Infinity"
+									prefWidth="200.0" />
+								<ChoiceBox fx:id="customid" minWidth="-Infinity"
+									prefWidth="200.0" />
+							</children>
+						</HBox>
+					</children>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity"
+							minWidth="-Infinity" prefWidth="60.0" />
+						<ColumnConstraints hgrow="SOMETIMES"
+							maxWidth="1.7976931348623157E308" />
+					</columnConstraints>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</padding>
+					<rowConstraints>
+						<RowConstraints maxHeight="-Infinity" minHeight="10.0"
+							prefHeight="10.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="-Infinity"
+							prefHeight="120.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0"
+							prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="50.0"
+							prefHeight="50.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="1.7976931348623157E308"
+							prefHeight="160.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+				</GridPane>
+			</content>
+		</ScrollPane>
+	</children>
+</AnchorPane>

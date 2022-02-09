@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" prefViewportHeight="630.0" prefViewportWidth="502.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<content>
+				<GridPane hgap="5.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<children>
+						<Label text="ID:" GridPane.rowIndex="1" />
+						<Label text="Name:" GridPane.rowIndex="2" />
+						<Label text="Video:" GridPane.rowIndex="3" />
+						<Label text="Moment:" GridPane.rowIndex="4" />
+						<Label text="Type:" GridPane.rowIndex="5" />
+						<Label text="Comment:" GridPane.rowIndex="6" GridPane.valignment="TOP">
+							<padding>
+								<Insets top="5.0" />
+							</padding>
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</Label>
+						<TextField fx:id="name" promptText="annotation name" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</TextField>
+						<Label fx:id="videoName" maxWidth="1.7976931348623157E308" text="Video-Name" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</Label>
+						<Button fx:id="momentButton" mnemonicParsing="false" onAction="#showInVideo" prefWidth="84.0" text="Zeitpunkt im Video" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+						<Label fx:id="id" maxWidth="1.7976931348623157E308" text="ID aus der Datenbank" GridPane.columnIndex="1" GridPane.rowIndex="1">
+							<padding>
+								<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+							</padding>
+						</Label>
+						<HBox alignment="CENTER_RIGHT" cache="true" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowSpan="2">
+							<children>
+								<Button fx:id="restoreButton" alignment="CENTER" mnemonicParsing="false" onAction="#restoreAnnotation" prefWidth="84.0" text="Restore" />
+								<Button fx:id="saveButton" alignment="CENTER" mnemonicParsing="false" onAction="#saveAnnotation" prefWidth="84.0" text="Save" />
+								<Button fx:id="deleteButton" alignment="CENTER" mnemonicParsing="false" onAction="#deleteAnnotation" prefWidth="84.0" text="Delete" />
+							</children>
+							<opaqueInsets>
+								<Insets />
+							</opaqueInsets>
+							<GridPane.margin>
+								<Insets />
+							</GridPane.margin>
+						</HBox>
+						<TextArea fx:id="comment" maxHeight="1.7976931348623157E308" promptText="comment" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+						<HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+							<children>
+								<ChoiceBox fx:id="type" minWidth="-Infinity" prefWidth="200.0" />
+								<ChoiceBox fx:id="customid" minWidth="-Infinity" prefWidth="200.0" />
+							</children>
+						</HBox>
+						<Label text="Conflict:" GridPane.rowIndex="7" />
+						<TextField fx:id="conflict" promptText="conflict" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+						<Label text="References:" GridPane.rowIndex="8" GridPane.valignment="TOP">
+							<padding>
+								<Insets top="10.0" />
+							</padding>
+						</Label>
+						<VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+							<children>
+								<HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS">
+									<children>
+										<Button fx:id="addReferenceButton" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#addReference" prefWidth="84.0" text="Add" />
+										<TextField fx:id="reference" maxWidth="1.7976931348623157E308" promptText="00:00:00" HBox.hgrow="ALWAYS" />
+									</children>
+								</HBox>
+								<ListView fx:id="referenceListView" />
+							</children>
+							<padding>
+								<Insets top="5.0" />
+							</padding>
+						</VBox>
+					</children>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="61.0" />
+						<ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+					</columnConstraints>
+					<padding>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</padding>
+					<rowConstraints>
+						<RowConstraints maxHeight="-Infinity" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="120.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="-Infinity" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+						<RowConstraints maxHeight="1.7976931348623157E308" prefHeight="285.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+				</GridPane>
+			</content>
+		</ScrollPane>
+	</children>
+</AnchorPane>

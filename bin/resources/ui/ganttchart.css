@@ -1,0 +1,15 @@
+.CONFLICT {
+    -fx-background-color:rgba(206.0,0.0,0.0,0.7);
+}
+.REQUIREMENT {
+    -fx-background-color:rgba(156.0,207.0,49.0,0.7);
+}
+.QUESTION {
+    -fx-background-color:rgba(255.0,158.0,0.0,0.7);
+}
+.IMPORTANT {
+    -fx-background-color:rgba(247.0,215.0,8.0,0.7);
+}
+.CUSTOM {
+    -fx-background-color:rgba(0.0,158.0,206.0,0.7);
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="shortcuts">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="shortcut" maxOccurs="unbounded" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation>ImportantAnnotation  RequirementAnnotation  RAW RequirementAnnotation  FUNCTIONAL RequirementAnnotation  NONFUNCTIONAL RequirementAnnotation  USE_CASE RAW RequirementAnnotation  QuestionAnnotation  ConflictAnnotation  CustomAnnotation  CustomAnnotation</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="importantannotation" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="comment"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="requirementannotation" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="comment"/>
+                    <xs:element type="xs:string" name="granularity"/>
+                    <xs:element type="xs:string" name="displayformat"/>
+                    <xs:element type="xs:string" name="requirement"/>
+                    <xs:element type="xs:string" name="source"/>
+                    <xs:element type="xs:string" name="rationale"/>
+                    <xs:element type="xs:string" name="obligation"/>
+                    <xs:element type="xs:string" name="priority"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="questionannotation" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="comment"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="conflictannotation" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="comment"/>
+                    <xs:element type="xs:string" name="conflict"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="customannotation" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="customannotationid"/>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="comment"/>
+                    <xs:element type="xs:string" name="attribute1Value"/>
+                    <xs:element type="xs:string" name="attribute2Value"/>
+                    <xs:element type="xs:string" name="attribute3Value"/>
+                    <xs:element type="xs:string" name="attribute4Value"/>
+                    <xs:element type="xs:string" name="attribute5Value"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
