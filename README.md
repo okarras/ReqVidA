@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/okarras/ReqVidA">
-    <img src="src/application/images/logo.png" alt="Logo" width="300" height="300">
+    <img src="src/resources/icons/splashscreen.gif" alt="Logo" width="500" height="200">
   </a>
 
 <h2 align="center">ReqVidA - Requirements Video Analyzer<br/>

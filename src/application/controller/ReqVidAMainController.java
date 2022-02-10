@@ -172,7 +172,7 @@ public class ReqVidAMainController implements Initializable, ControlledScene {
 		});
 		
 		logoView.setSmooth(true);
-		logoView.setImage(new Image(getClass().getResourceAsStream("/resources/icons/SE-Logo(big).png")));
+		//logoView.setImage(new Image(getClass().getResourceAsStream("/resources/icons/SE-Logo(big).png")));
 
 	}
 

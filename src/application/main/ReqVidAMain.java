@@ -123,7 +123,7 @@ public class ReqVidAMain extends Application {
 		
 		stage.setResizable(true);
 		stage.setScene(scene);
-		stage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/icons/SE-Logo(small).png")));
+		stage.getIcons().add(new Image(getClass().getResourceAsStream("/resources/icons/logo.png")));
 		stage.setTitle("ReqVidA - Requirements Video Analyzer");
 		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 
