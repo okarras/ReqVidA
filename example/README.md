@@ -49,7 +49,7 @@ The Analyzer enables the analysis of a video by providing an integrated video pl
 <!-- EXAMPLE -->
 ## Example
 <p align="justify">
-The folder [3-Seiten-Presenter](3-Seiten-Presenter) also provides an example that can be loaded and used in ReqVidA. In this example, the participants of a workshop discuss their visions and requirements for a future software system. In agreement with the workshop participants, we verified that the video clip contains eleven requirements that should be included in the textual minutes of the workshop.
+The folder "3-Seiten-Presenter" also provides an example that can be loaded and used in ReqVidA. In this example, the participants of a workshop discuss their visions and requirements for a future software system. In agreement with the workshop participants, we verified that the video clip contains eleven requirements that should be included in the textual minutes of the workshop.
 </p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
