@@ -1,0 +1,777 @@
+Annotation 33)
+ Name: Erste Vision des Systems
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:00:17
+ Comment: Nachfolgend wird die erste Vision des Systems beschrieben
+
+Annotation 1)
+ Name: Gestensteuerung des Systems
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:03:05
+ Comment: Gestensteuerung zur Bedienung des Systems durch die Verwendung einer Kinect
+ Granularity: FEATURE
+ Requirement: Das System muss durch Gesten, die von einer Kinect erkannt werden, bedient werden.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Daniel Gritzner
+ Rationale: Zur interaktiven Bedienung des Systems
+ 
+Annotation 2)
+ Name: Powerpoint
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:04:41
+ Comment: Stellt PowerPoint eine Beschränkung dar, wenn man etwas machen will, dass 
+man in PowerPoint sonst nicht macht.
+Beispielsweise: 
+Gestensteuerung zum Verschieben von Elementen während der Präsentation
+ Questions:
+  1. Stellt die Verwendung von PowerPoint Probleme dar?
+
+Annotation 3)
+ Name: Seitenungleichgewicht
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:04:55
+ Comment: Die Leinwände an den Seiten sind eher peripher, wodruch die Leinwände 
+untereinander nicht gleichgewichtig sind. Die Leinwand in der Mitte ist die 
+bevorzugte Richtung und zwei eher weniger erforderliche Leinwände.
+
+Annotation 44)
+ Name: Technische Eigenschaft des Systems
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:05:10
+ Comment: Im InfoLab wird die bereitstehende Technik über drei Eingänge und drei Ausgänge
+bezüglich der Rechner / Beamer Konstellation verfügen, welche beliebig 
+miteinander kombinierbar sind.
+ Granularity: FEATURE
+ Requirement: Das System wird über drei Ein- und Ausgänge bezüglich des Rechner / Beamer Aufbaus verfügen, die beliebig miteinander kombinierbar sind.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: 
+ 
+Annotation 34)
+ Name: Verwendung multimedialer Inhalte
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:05:33
+ Comment: Eine Frage die zu klären ist, ist der Einsatz und der Umfang von multimedialen 
+Inhalten, wie Filmen oder Klängen.
+ Questions:
+  1. Sollen multimediale Inhalte auch vorplatziert werden können?
+
+Annotation 35)
+ Name: Effekte bei Präsentation
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:05:41
+ Comment: Aufgrund der Konstellation von 3 Leinwänden sind entsprechende Effekte zur 
+Erzeugung von Eindruck bei den Betrachtern umso wichtiger.
+
+Effekte in dem Sinn:
+- Etwas kann von einer Leinwand auf die andere verschoben werden
+- Zoom-Funktion in Folie, sodass sich der Inhalt auf alle Leinwände verteilt
+ Granularity: FEATURE
+ Requirement: Das System muss über Effekte bei der Präsentation verfügen
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Zur Erzeugung von Eindruck bei dem Betrachter
+ 
+Annotation 5)
+ Name: Timeline-Konzept
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:06:09
+ Comment: Erlaubt die Planung der Verteilung von Folien einer Präsentation bezüglich
+Ort auf den Leinwänden und Zeit zu der der Inhalt sichtbar ist
+ Granularity: FEATURE
+ Requirement: Das System sollte über eine Timeline zur Planung der Position und des Zeitpunktes von Präsentationselementen verfügen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Daniel Gritzner
+ Rationale: Zur besseren Planung und Kontroller Anzeige von Elementen.
+ 
+Annotation 36)
+ Name: PowerPoint-Metapher
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:07:13
+ Comment: PowerPoint ist eine gute Metapher für das System, jedoch hängt sehr viel mit dran.
+
+Annotation 6)
+ Name: Umfang von Animationen
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:07:33
+ Comment: Klärungsbedarf, ob Animationen nur entlang fest definierter Pfade über mehrere 
+Leinwände erfolgen können oder doch noch flexibler sind.
+
+Annotation 37)
+ Name: Flexibilität von Animationen
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:07:42
+ Comment: PowerPoint bietet vordefinierte Animationen, die in der Präsentation abgespielt
+werden. 
+Reicht das für den 3-Seiten Presenter oder müssen die Animationen flexibler sein?
+Beispielsweise bei bestimmten Gesten zur Steuerung.
+ Questions:
+  1. Braucht man mehr als vordefinierte Animationen?
+
+Annotation 7)
+ Name: Wrapper zum Import von PPT-Präsentationen
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:08:39
+ Comment: Alle Teilnehmer nicken zustimmend zu im Video.
+ Granularity: FEATURE
+ Requirement: Das System sollte über einen Wrapper verfügen der eine normale PPT-Präsentation laden kann, um diese zu einer 3-Seiten-Präsentation zu erweitern.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Stephan Kiesling
+ Rationale: Verwendung der klassischen, bestehenden PPT-Erzeugung, sodass PowerPoint nicht nachgebaut werden muss.
+ 
+Annotation 8)
+ Name: PPT-API und Parsbar?
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:09:13
+ Comment: Bezüglich des Imports von klassichen PowerPoint-Präsentationen bestehen die 
+folgenden Fragen.
+ Questions:
+  1. Hat PowerPoint eine gute API?
+  2. Kann das ppt-Format geparst, um es bei der Erstellung einer 3-Seiten-Präsentation zu berücksichtigen?
+
+Annotation 38)
+ Name: PPT ist parsbar und hat API
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:09:24
+ Comment: Annahme: 
+pptx nutzt XML, welches geparst werden kann
+
+Schneider:
+Hat schon mal aus ppt-Files alles Überschriften ausgelesen.
+
+Annotation 9)
+ Name: Potentielle Nutzer des Systems
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:10:06
+ Comment: Präsident
+Dozent für praktische und theoretische Veranstaltungen
+
+Annotation 39)
+ Name: Beispiel der Nutzung des Systems
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:10:37
+ Comment: Prof. Schneider beschreibt einen möglichen Teil der praktischen Nutzung des 
+Systems unter der Berücksichtigung aller 3 Leinwände
+
+Man kann Ansichten an einer Seitenleinwand stehen lassen.
+Beispielsweise links ein Kanban-Board hinschieben und auf der zentralen Leinwand
+in den Folien weitermachen und später noch etwas anders herausziehen auf die 
+andere Seitenleinwand schieben.
+
+Annotation 10)
+ Name: Beeindruckende Präsentation
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:11:06
+ Comment: Die Präsentation muss neben der gängigen PowerPoint-Art, eindrucksvoll sein, 
+sodass eine richtige Show möglich ist.
+ Granularity: FEATURE
+ Requirement: Das System muss über beeindruckende Show-Effekte verfügen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Das InfoLab dient nicht nur klassischen Vorleseung, sondern auch Veranstaltungen / Marketing, die beeindrucken sollen.
+ 
+Annotation 40)
+ Name: Grenzen der Show-Effekte
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:11:12
+ Comment: Grenzen beim "Show abziehen":
+- von den Effekten her kann das beleibig weit getrieben werden
+- grundlegende OH-Effekte sind wichtig
+- aber feingranulare, optisch sanfte Bewegungen stellen eher zu komplexe 
+Aspekte dar, in denen man sich zu sehr verstricken kann
+ Questions:
+  1. Wie komplex und umfangreich sollen Show-Effekte sein?
+
+Annotation 41)
+ Name: OH-Effekte
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:11:27
+ Comment: Mit grundlegenden Effekten sind bestimmte Animationen oder Interaktionen
+gemeint, die bei den Betrachtern einen OH-Effekt auslösen.
+ Granularity: FEATURE
+ Requirement: Das System muss gewisse, grundlegende Effekte bei der Präsentation verfügen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Grundlegende Basis für beeindruckende Präsentationen sind wichtig.
+ 
+Annotation 42)
+ Name: Weitere Stakeholder und Einsatzmöglichkeit
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:11:47
+ Comment: Studenten stellen weitere konkrete Stakeholder dar und als diesbezügliche 
+Einstzmöglichkeit des Systems bieten sich Seminare an.
+
+Annotation 43)
+ Name: Verwendung der Leinwände
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:12:07
+ Comment: Es muss sich der genaue Verwendungszweck der 3 Leinwände überlegt werden.
+ Questions:
+  1. Wie genau sollen die 3 Leinwände eingesetzt werden?
+
+Annotation 11)
+ Name: Tablet und Smartphone zur Interkation
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:12:50
+ Comment: Beeinflussung der Präsentation über mobile Geräte zur Erweiterung der Interaktion
+durch die Teilnehmer
+
+Beispiele:
+- Übung: Die Ergebnisse einer bearbeiteten Aufgabe in der Übung können auf die
+Leinwände geschoben werden
+
+Annotation 12)
+ Name: Basisanforderung: Aufzeichnung
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:13:15
+ Comment: 
+ Granularity: FUNCTIONAL_REQUIREMENT
+ Requirement: Das System muss die komplette, gehaltene Präsentation aufzeichnen können.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Wenn der Ablauf der Präsentation nicht von Anfang an festgelegt ist, sondern interaktiv bei der Durchführung verändert werden kann, dann muss die Präsentation zum Mitnehmen am Ende aufgezeichnet werden können.
+ 
+Annotation 13)
+ Name: Abspielen von Präsentationen
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:15:08
+ Comment: 
+ Granularity: FUNCTIONAL_REQUIREMENT
+ Requirement: Das System muss aufgezeichnete Präsentationen abspielen können.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Wenn Präsentationen aufgezeichnet werden können, dann müssen sie auch abgespielt werden können.
+ 
+Annotation 14)
+ Name: Import bestehender Präsentationen
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:15:34
+ Comment: 
+ Granularity: FUNCTIONAL_REQUIREMENT
+ Requirement: Das System soll über eine Import-Funktion verfügen mit der bereits bestehende Präsentationen in dem 3-Seiten-Presenter verwendet werden können.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Daniel Gritzner
+ Rationale: Bereits existierende Päsentationen sollen auch mit dem System verwendet werden können.
+ 
+Annotation 15)
+ Name: Vorbereitung von Präsentationen
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:16:07
+ Comment: Umfang der Möglichkeiten des Vorbereitens:
+- Import von Präsentationen aus PowerPoint
+- Hinzufügen / darauf schreiben  und Gestalten von Präsentation
+
+Diese beiden Funktionen schließen sich grundsätzlich nicht gegenseitig aus.
+ Granularity: FUNCTIONAL_REQUIREMENT
+ Requirement: Das System muss die Vorbereitung einer Präsentation ermöglichen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: 
+ 
+Annotation 45)
+ Name: Vorbereitungsfunktionalität
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:16:20
+ Comment: Die Frage bezieht sich aud die Anforderung der Vorbereitung von 
+Präsentationen.
+Es ist noch unklar, ob des System selber die Erstellung bzw. Ausarbeitung von 
+Präsentationen zur Vorbereitung unterstützen soll oder diese Funktion durch 
+die Verwendung von PowerPoint unterstützt wird.
+ Questions:
+  1. Soll das System Vorbereitungen einer Präsentation unterstützen oder einfach immer nur Präsentationen aus PowerPoint importieren?
+
+Annotation 46)
+ Name: 3 Workflows des Systems
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:16:39
+ Comment: 1. Workflow:
+Ich nehme etwas Bestehendes und importiere diese Präsentation.
+
+2. Workflow:
+Ich erstelle eine neue Präsentation vollständig in dem Tool dieses zu 
+entwickelnden System.
+
+3. Workflow:
+Ich erstelle die Präsentation in PowerPoint, weil es praktischer ist, importiere es
+danach in das System und ergänze dann die Fancy-Besonderheiten des Systems
+in der Präsentation.
+ Granularity: FEATURE
+ Requirement: Das System sollte die 3 unterschiedlichen Workflows in dem Kommentar unterstützen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Olga Liskin
+ Rationale: Genaue Unterscheid der Möglichkeiten in der Systemverwendung.
+ 
+Annotation 16)
+ Name: Editierfunktion für Gesten
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:17:15
+ Comment: Unterscheidung zwischen Geste für das Verschieben einer ganzer Folie und 
+Gesten, deren Ausführung bestimmte Trigger auslösen, welche zu einem 
+Verhalten für, das PowerPoint selber gar nicht bietet / bieten kann.
+ Granularity: RAW_REQUIREMENT
+ Requirement: Das System sollte für Gesten eine bestimmte Editierfunktion bieten, sodass durch eine Geste ein definierter Trigger ausgelöst wird zum Start einer ausgewählten Aktion.
+ Obligation: SHOULD
+ Priority: PRIORITY1
+ Source: Daniel Gritzner
+ Rationale: Aufgrund der Verwendung von Gesten ist generell eine gewisse Editierfunktion erforderlich.
+ 
+Annotation 48)
+ Name: Vorteil vom Import bestehender PowerPoint Präsentationen
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:17:48
+ Comment: Der Import einer PowerPoint Präsentation und dessen leichte Anpassung sind von
+großem Vorteil, da alte Folien verwendet werden können und die dann noch 
+weiter aufwerten.
+
+Annotation 17)
+ Name: Verwendungsmöglichkeiten von Gesten
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:18:35
+ Comment: Vordefinierte Gesten für bestimmte Aktionen: z.B. Mausklick oder Zoom-Geste
+ Granularity: FEATURE
+ Requirement: Das System muss eine Menge vordefinierter Gesten für bestimmte Aktionen anbieten.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Festlegung des Umfanges möglichen Aktionen die durch Gesten ermöglicht werden.
+ 
+Annotation 50)
+ Name: Unterstützung von Maus und Tastatur
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:19:35
+ Comment: 
+ Granularity: FEATURE
+ Requirement: Das System muss durch Maus und Tastatur bedienbar sein.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Olga Liskin
+ Rationale: Erfahrung der Teilnehmerin zeigt, dass Gestensteuerung über Kinect oft schwierig bei der Erkennung ist.
+ 
+Annotation 51)
+ Name: Eyetracking
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:20:02
+ Comment: Hier wird auf einmal von der Verwendung von Eyetracking in dem System 
+gesprochen!
+
+Annotation 18)
+ Name: Definierte Effekte / Animationen
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:20:43
+ Comment: Effekte meinen visuelle Darstellungen spezieller Aktionen der Steuerung
+Anmationen meinen die klassische Veränderung von Inhalten in einer Präsentation
+ Granularity: FEATURE
+ Requirement: Das System muss Animationen bzw. Effekte für die visuelle Darstellung der Präsentation in dem Werkzeug anbieten.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider, Olga Liskin
+ Rationale: Unterscheidung der beiden Punkte, da sie beide für das Tooll erforderlich sind, aber unterschiedliche Aspekte betrachten.
+ 
+Annotation 52)
+ Name: Verbindung von Interaktion und Leinwänden
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:21:44
+ Comment: 
+ Granularity: FEATURE
+ Requirement: Das System sollte mittels einer Kinect die Steuerung der Präsentation auf einer Hauptleinwand unterstützen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Verwendung von mehreren Kinects ist schwierig, daher sollte es nur eine erstmal geben und damit eine Hauptleinwand.
+ 
+Annotation 53)
+ Name: Umfang der Interaktionsoptionen bzgl. Gesten
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:21:44
+ Comment: Es besteht weiterhin ein Klärungsbedarf, wie komplex die Gestensteuerung des 
+Systems zukünftig werden soll.
+ Questions:
+  1. Soll auf allen 3 Leinwänden mittels 3 Kinects Gestensteuerung möglich sein?
+  2. Soll es nur eine Kinect geben und eine Hauptleinwand?
+
+Annotation 54)
+ Name: Verschieben von Folien
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:22:41
+ Comment: Unklar ist hier bei noch die Rückrichtung, wie kommen Folien von den 
+Seitenleinwänden wieder in die Mitte.
+Mögliche Lösung durch verschiedene Gesten verschiedene Aktionen in der 
+Steuerung ermöglichen.
+ Granularity: FEATURE
+ Requirement: Das System sollte Folien in der mittleren Leinwand per Geste nach links oder rechts auf die Seitenleinwände verschieben können.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Stephan Kiesling
+ Rationale: Idee zur Verwendung der 3 Seiten.
+ 
+Annotation 55)
+ Name: Multi-Gestensteuerung
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:24:18
+ Comment: Stephan Kiesling spricht die Idee komplexer Gesten für die Steuerung veschiedener
+Leinwände an.
+ Questions:
+  1. Ist das ein wirklich ernst gemeinter Vorschlag, der weiter verfolgt weden sollte?
+
+Annotation 20)
+ Name: Aktualisierung auf mehreren Leinwänden
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:24:52
+ Comment: Beispiel-Szenario:
+Auf der linken Leinwand befindet sich das Outline der Präsentation, in der Mitte 
+die aktuellenPräsentationsfolie. Wenn nundie nächste Folie den nächsten Aspekt
+der Gliederung im Outline erreicht, sollen sie beide Leinwände aktualisiern.
+Das Outline springt einen Punkt weiter und die nächste Folie wird sichtbar.
+ Granularity: FEATURE
+ Requirement: Das System sollte die Aktualisierung von Inhalten auf allen drei Leinwänden unterstützen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Olga Liskin
+ Rationale: Bestehendes Wunschszenario in der Vorstellung der Teilnehmerin.
+ 
+Annotation 21)
+ Name: Arten des Weiterspringens in Folien
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:25:15
+ Comment: Parameterisierung des Weitersprings, um zu Sagen was Weiter genauer bedeutet 
+und auf welche Leinwand es sich bezieht.
+
+Arten des Weiter-Schaltens:
+- Spring zu Folie / Seite XY
+- Timeline-Weiter: Führe die nächste geplante Aktion aus
+ Granularity: FEATURE
+ Requirement: Das System muss unterschiedliche Arten des Weiterschaltens in einer Präsentation unterstützen, wie das Weiter in den Folien oder das Weiter der nächsten vorgesehenen Aktion die ausgeführt werden soll.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Daniel Gritzner
+ Rationale: Die Weiter-Aktion ist zu allgemein und muss genauer bezüglich seiner unterschiedlichen Bedeutungen geklärt werden.
+ 
+Annotation 56)
+ Name: Ablaufplanung der Präsentation
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:25:43
+ Comment: 
+ Granularity: FEATURE
+ Requirement: Das System muss die Ablaufplanung der Präsentation unterstützen, indem festgelegt werden kann, wann sich welche Folien, wie genau aktualisieren.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Daniel Gritzner
+ Rationale: Zur Planung der Durchführung der Präsentation muss festgelegt werden können, welche Leinwände sich wann genau aktualisieren, wenn eine Weiter-Aktion durchgeführt wird.
+ 
+Annotation 57)
+ Name: Übersicht für Ablaufplanung
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:26:48
+ Comment: Worst Case:
+Es könnte sein, dass es 3 Foliensätze gibt sodass pro Leinwand eine Präsentation
+gezeigt werden soll.
+Hierfür muss es eine Übersicht geben, die die Planung des Ablaufes der 
+Präsentation erlaubt.
+ Granularity: FEATURE
+ Requirement: Das System sollte über eine Übersicht zur Planung des genauen Ablaufes von einem oder mehreren Foliensätzen verfügen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Stephan Kiesling
+ Rationale: Bei der Verwendung von 1 oder mehr Präsentationsfoliensätzen zur gleichen Zeit, musses zur vorherigen Planung des Ablaufes eine Übersicht geben, die bei der Planung unterstützt.
+ 
+Annotation 22)
+ Name: Unabhängigkeit der Leinwände
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:27:44
+ Comment: Falls das Feature vom Nutzer nicht gewünscht ist, sollte man es abschalten können, 
+sodass die Präsentation auf allen 3 Leinwänden stattfindet, die nur separat
+angesteuert werden können.
+ Granularity: FEATURE
+ Requirement: Das System muss die drei Leinwände unabhängig voneinander verwalten und steuern können.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider, Daniel Gritzner
+ Rationale: Zum beibehalten der dynamischen Interaktion, in dem beispielsweise eine Folie auf einer Leinwand zwischengespeichert werden kann.
+ 
+Annotation 58)
+ Name: Speicherung von Folien auf den Seitenleinwänden
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:28:25
+ Comment: 
+ Granularity: FEATURE
+ Requirement: Das System sollte einzelne Folien auf den Seitenleinwänden speichern können, wobei die Folie durch einfache Gesten nach links oder rechts verschoben werden.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Da es weniger um das Verschieben einzelner Elemente einer Folie geht, sollte man eher auf grundlegende PowerPoint Präsentationen zurückgreifen und die mit nützlichen Funktionen erweitern.
+ 
+Annotation 59)
+ Name: Interaktivität beim Ablauf vs. Kreativität in der Ablaufgestaltung
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:29:03
+ Comment: Es scheint so als wenn unterschieden werden muss, ob man eher beim Ablauf 
+der Präsentation spontane Aktionen durchführen will oder aber im Vorfeld bei der 
+Planung der viele coole Feature zur Gestaltung eines festen Ablaufes mit tollen 
+Effekten haben will.
+ Questions:
+  1. Wo soll der Fokus eher liegen: bei der Interaktivität während der Präsentation, oder bei der Kreativität in der vorbreitenden Gestaltung des Ablaufes?
+
+Annotation 23)
+ Name: Unterstützung von normalen Powerpoint Präsentationen
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:31:15
+ Comment: Beispielszenario:
+Für ein Seminar sollte eine Präsentation bereits Zuhause erstellt werden können, 
+wodruch die Verwendung von normalen PowerPoint mit bstimmten Aktionen in 
+der Steuerung vorzuziehen ist.
+ Granularity: FEATURE
+ Requirement: Das System muss mit normalen PowerPoint Präsentationen zurechkommen, damit die Planung / Erstellung einer Präsentation ohne Problem auch von Zuhause aus erfolgen kann.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Vorbereitung einer Präsentation muss von Zuhause aus gehen und nicht erst vorher im Raum erfolgen.
+ 
+Annotation 24)
+ Name: Funktionsweise des Systems
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:33:19
+ Comment: Das System läd eine normale PowerPoint Präsentation und spielt sie auf der 
+mittleren Leinwand ab.
+Mit Gesten können die Folien auf die seitlichen Leinwände interaktiv verschoben 
+werden.
+Dabei wird eine Art Screenshot der Folie gemacht, sodass nur die aktuelle 
+sichtbare Version der Folie verschoben wird.
+Auf der mittleren Leinwand läuft die normale Präsentation weiter.
+
+Annotation 60)
+ Name: Speicherung einer Folie auf einer Seitenleinwand
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:34:49
+ Comment: Diese Art der Speicherung kann gegebenfalls später durch richtiges Verschieben
+der kompletten Folie erfolgen.
+ Granularity: FEATURE
+ Requirement: Das System sollte Sceenshots der aktuellen Folie machen, sodass dieses Bild auf einer der Seitenleinwände angezeigt werden kann.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Olga Liskin
+ Rationale: Erster Schritt zum Verschieben der Folie auf die Seitenleinwände kann durch einen Screenshot erfolgen.
+ 
+Annotation 26)
+ Name: Ideen zur konkreten Steuerung der Präsentationen
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:37:00
+ Comment: Kurt Schneider:
+API von PowerPoint zur Steuerung nutzen. Über die Hauptleinwand die 
+jeweilige leinwand ansprechen können, wenn mehrere Foliensätze verwendet 
+werden.
+
+Stephan Kiesling:
+Gestensteuerung pro Screen, wobei durch Schalter / Tasten vorher gesagt 
+werden kann auf welchen Screen sich eine Aktion beziehen soll
+
+Daniel Gritzner:
+Bereichsabhängige Gesten zur Steuerung. Durch Geste links wird linke Leinwand
+angesprochen, durch Geste in der Mitte wird mittlere Leinwand angesprochen 
+und durch Geste rechts wird die rechte Leinwand angesprochen.
+
+Olga Liskin:
+Kombination von beiden Händen zur Steuerung der Leinwände
+Ein Hand dient zum selektieren der Leinwand, die andere macht die 
+Interaktionsgeste.
+
+Annotation 61)
+ Name: (De-) Aktivierung von Gesten
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:38:27
+ Comment: Gesten aktivieren / deaktivieren
+ Granularity: FUNCTIONAL_REQUIREMENT
+ Requirement: Das Sstem muss die Möglichkeiten Gestenstuerung zu de- aktiviren.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: TB
+ Rationale: Verhinderung versehtnlichter Gesten
+ 
+Annotation 27)
+ Name: Nützlichkeit von Gesten
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:38:42
+ Comment: Ein Vortragender ist selber meist aktiver und nutzt Gesten beim Sprechen, wodurch
+versehentlich Aktionen ausgelöst werden könnten.
+ Questions:
+  1. Ist Gestensteuerung nützlich, wenn bei der Präsentation selber gestig durch den Vortragenden erfolgt?
+
+Annotation 28)
+ Name: Bedienung durch Presenter
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:39:21
+ Comment: 
+ Granularity: FEATURE
+ Requirement: Das System sollte durch einen normalen Presenter bedient werden können.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Tobias Baum, Daniel Gritzner
+ Rationale: Normale Präsentationsbedienung durch einen klassischen Presenter unterstützen.
+ 
+Annotation 62)
+ Name: Gestensteurung über Presenter (de-)aktivieren
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:40:02
+ Comment: Es besteht die Idee eine weniger genutzt Taste eines normalen Presenster so 
+umzufunktionieren, dass die Gestensteuerung aktiviert und deaktiviert werden 
+kann.
+
+Annotation 30)
+ Name: Fancy Stuff
+ Type: REQUIREMENT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:42:09
+ Comment: Beispiel: 
+- Feine Animation der Verschiebung von Elementen über Leinwände hinweg
+- Abprall-Annimation, wenn das Objekt gegen das Ende einer Seitenleinwand prallt.
+- Dialoge die von den zwei Leinwandseiten aus geführt werden
+ Granularity: FEATURE
+ Requirement: Das System muss über Fancy-Effekte verfügen, die bezüglich der Darstellung und dem Ablauf bei der Ausfürhung von Aktionen, wie das Verschieben, einen tollen Eindruck hinterlassen.
+ Obligation: SHALL
+ Priority: PRIORITY1
+ Source: Kurt Schneider
+ Rationale: Für eindrucksvolle Effekte müssen bestimmte Fancy-Funktionen und Aktionen entwickelt werden.
+ 
+Annotation 64)
+ Name: Komplexität des Gesamtsystems
+ Type: QUESTION
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:44:11
+ Comment: Hierbei handelt es sich um Fragen, die mit deutlichen Schwierigkeiten und Risiken
+bei der Umsetzung verbunden sein können.
+ Questions:
+  1. Wie schwierig ist die Verwendung von PowerPoint APIs?
+  2. Wie schwierig wird Gestenerkennung über Kinect?
+  3. Gibt es, neben PowerPoint API zum Auslesen von Informationen, auch APIs zur Steuerung von PowerPoint Präsentationen?
+
+Annotation 65)
+ Name: Umsetzungsideen
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:44:16
+ Comment: Daniel Gritzner:
+Einsatz eines PowerPoint Player Tools, das die eigentliche Präsentation abspielt.
+Dieses Tool dann durch eine eigene Software, die die Gestenerkennung / 
+-steuerung übernimmt, bedient wird.
+
+Olga Liskin:
+EBei Verzicht auf großartige PoewrPoint-Funktionalität ist ein Tool, das nur
+mehrere APIs nutzt, um Präsentationen anzeigen und zu steuern, genauso 
+aufwendig.
+
+Annotation 31)
+ Name: Planung für weiteres Vorgehen
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:46:31
+ Comment: Abschluss der Sitzung
+Zusamenfassung der bestehenden Erkenntnisse und grobe Planung des weiteren 
+Vorgehens.
+
+Annotation 66)
+ Name: Handy-Integration
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:46:58
+ Comment: Die Verwendung von Handys zur Beteiligung der Zuschauer ist eine sehr gute Idee.
+Ist aber nicht in einer Gruppe realisierbar und sollte daher später genauer 
+betrachtet werden.
+
+Annotation 32)
+ Name: Umsetzungsidee
+ Type: IMPORTANT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:48:30
+ Comment: Tobias Baum:
+Einsatz von HTML-Präsentationstool als Alternative zu der Verwendung von 
+PowerPoint
+
+Annotation 47)
+ Name: Konkrete Systemumfang
+ Type: CONFLICT
+ Video-Name: 3 Seiten Presenter - Video1 - 2015.09.07-11.36.09.mp4
+ Moment: 00:50:20
+ Comment: Es gibt im Wesentlichen zwei Ausprägungen des hier angestrebten Systems.
+
+Variante 1: Klassische PowerPoint Unterstützung
+Elaubt die Verwendung von bestehenden Präsentationen aus PowerPoint und 
+unterstützt gewisse grundelegende Bedienoptionen zur Steuerung der 
+Präsentation.
+
+Variante 2: Neuartiges System
+Erlaubt die Erstellung vollständig neuer Präsentationen, wodurch 
+umfangreiche Editierfunktionen erforderlich sind und damit PowerPoint selbst
+komplett nachimplementiert werden muss.
+
+Variante 3: Mischform der vorherigen Varianten
+Erlaubt die Umsetzung beider vorherigen Varianten, wodurch es sehr komplex
+und umfangreich wird und daher mit einem hohen Risiko verbunden ist.
+ Conflict: Es gibt unterschiedliche Varianten, wie das System genau umgesetzt werden soll.
+ References:
+  1. 00:17:44
+  2. 00:50:19
+

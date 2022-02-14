@@ -1,0 +1,24 @@
+Name: Kurt Schneider
+Function: Professor
+Contact: kurt.schneider@inf.uni-hannover.de
+Airtime: keine Angabe
+
+Name: Daniel Griztner
+Function: WiMi
+Contact: Daniel.Gritzner@inf.uni-hannover.de
+Airtime: keine Angabe
+
+Name: Tobias Baum
+Function: Rolle: Product Owner
+Contact: Tobias.Baum@inf.uni-hannover.de
+Airtime: keine Angabe
+
+Name: Stephan Kiesling
+Function: WiMi
+Contact: stephan.kiesling@inf.uni-hannover.de
+Airtime: keine Angabe
+
+Name: Olga Liskin
+Function: Rolle: Moderator
+Contact: olga.liskin@inf.uni-hannover.de
+Airtime: keine Angabe
