@@ -11,7 +11,7 @@
             "mainClass": "application.main.ReqVidAMain",
             "projectName": "ReqVidA_909d88b1",
             "vmArgs":
-                "--module-path  \"C:\\Program Files\\Java\\javafx-sdk-17.0.2\\lib\" --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web,javafx.swt  -splash:src\\resources\\icons\\splashscreen.gif"
+                "--module-path  \"C:\\Program Files\\Java\\javafx-sdk-17.0.2\\lib\" --add-modules javafx.base,javafx.controls,javafx.fxml,javafx.graphics,javafx.media,javafx.swing,javafx.web,javafx.swt  --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED -splash:src\\resources\\icons\\splashscreen.gif"
         }
     ]
 }
