@@ -85,7 +85,7 @@ The application of ReqVidA is shown in the following [document](example/README.m
 <!-- PUBLICATIONS -->
 ## Publications
 
-If you want to cite this project, we suggest the following reference:
+If you want to cite this project, we suggest to use either the citation provided above or the following reference:
 
 >Oliver Karras, Stephan Kiesling, and Kurt Schneider:<br/>
 >[__Supporting Requirements Elicitation by Tool-Supported Video Analysis__](https://ieeexplore.ieee.org/abstract/document/7765520)<br/>
@@ -94,7 +94,7 @@ If you want to cite this project, we suggest the following reference:
 The details of the implementation of ReqVidA are reported in the following reference:
 
 >Oliver Karras<br/>
->__Tool-supported Analysis of Requirements Workshop Videos__<br/>
+>[__Tool-supported Analysis of Requirements Workshop Videos__](https://doi.org/10.15488/11951)<br/>
 >Leibniz Universität Hannover, 2015.
 
 The details of the "Video as a By-Product" approach, on which ReqVidA is based, are reported in the following reference:
