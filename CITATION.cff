@@ -17,6 +17,7 @@ identifiers:
   - type: doi
     value: 10.15488/11951
     description: Corresponding publication
+repository-code: 'https://github.com/okarras/ReqVidA'
 keywords:
   - video
   - workshop
