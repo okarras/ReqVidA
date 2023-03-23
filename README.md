@@ -98,7 +98,7 @@ The details of the implementation of ReqVidA are reported in the following refer
 >Leibniz Universität Hannover, 2015.
 
 >Stephan Kiesling, Oliver Karras, and Kurt Schneider<br/>
->[__ReqVidA – Requirements Video Analyzer__](S. Kiesling, O. Karras, K. Sch)<br/>
+>[__ReqVidA – Requirements Video Analyzer__](https://fb-swt.gi.de/fileadmin/FB/SWT/Softwaretechnik-Trends/Verzeichnis/Band_36_Heft_3/paper_2.pdf)<br/>
 >In: Softwaretechnik-Trends, 36 (3), 2016.
 
 The details of the "Video as a By-Product" approach, on which ReqVidA is based, are reported in the following reference:
